@@ -1,4 +1,15 @@
-.skill
+body
 {
-    float: left;
+    margin: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header
+{
+    width:100%;
+    position:fixed;
+    top:0px;
+    position: sticky;
+    z-index:1;
+    
 }
