@@ -13,3 +13,40 @@ header
     z-index:1;
     
 }
+.fa {
+    padding: 10px;
+    margin: auto;
+    font-size: 30px;
+    width: 30px;
+    height: auto;
+    text-align:center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+    opacity: 0.9;
+    text-decoration: none;
+    
+  }
+  
+  .fa-google {
+    background: rgb(255, 255, 255);
+    color: #dd4b39;
+  }
+  
+  .fa-linkedin {
+    background: white;
+    color: #007bb5;
+  }
+  .fa-instagram {
+    background: white;
+    color: #ff038e;
+  }
+  
+  .fa-github {
+    background: rgb(255, 255, 255);
+    color: black;
+  }
+ 
