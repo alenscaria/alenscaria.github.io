@@ -4,235 +4,333 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi, I'm Alen Scaria Antony</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="icon" href="images/alen.jpeg" type="image/gif">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+    <title>Alen Scaria Antony</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li><a href="#" onclick="toggleMenu();">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu();">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
+                <li><a href="#project" onclick="toggleMenu();">Project</a></li>
+                <!-- <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li> -->
+                <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+            </ul>
+            <div class="themeSwitch">
 
-  <!-- Name and Navbar -->
-
-    <header>
-        <div class="row bg-info">
-            <div class="col-md-6 col-9 text-white p-3 pl-5">
-                <h2>Alen Scaria Antony</h2>
             </div>
-            <div class="col-md-6 col-3 my-auto">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                  
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link text-white" href="#Home">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-white" href="#Skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#Projects">Projects</a>
-                          </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#Contact">Contact</a>
-                          </li>
-                      </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <a href="#" class="logo">Portfolio</a>
+                <div class="toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <!--banner-->
+            <section class="banner" id="banner">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="images/alen.jpg" alt="My Image">
                     </div>
-                  </nav>
-            </div>
-        </div>
-    </header>
-
-    <!-- Photo and intro Section  -->
-
-    <section class="p-3 pt-5 pb-5" id="Home">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 col-12">
-                    <img src="images/alen.jpeg" alt="" class="mx-auto img-fluid rounded-circle">
+                    <h3>Alen Scaria Antony</h3>
+                    <p>Computer Science Engineer | Frontend Developer</p>
+                    <!--Need to add CV link in below line-->
+                    <a href="cv.pdf" class="btn" download="cv">Download My CV</a>
+                    <ul class="socialMedia">
+                        <li><a href="https://www.linkedin.com/in/alenscaria/" target="_blank"><i class="fa fa-linkedin"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="https://github.com/alenscaria" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="mailto:alenantony051@gmail.com" target="_blank"><i class="fa fa-google-plus"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/alenscaria_photography/" target="_blank"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
                 </div>
-                <div class="col-md-6 col-12 ml-auto text-center">
-                    <h4><br>Designer<br>Web Developer<br>Cybersecurity Enthusiast</h4>
-                    <p>Computer Science Undergraduate</p>
+            </section>
+
+            <!--About-->
+            <section class="about adjust" id="about">
+                <div class="title">
+                    <h2>About Me</h2>
                 </div>
-            </div>
-        </div>
-    </section>
-
-      <!-- Skills Section-->
-
-    <section class="bg-info pb-5 pt-4" id="Skills">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-12 p-4">
-              <h1 class="text-white">Skills</h1>
-          </div>
-        </div>
-          <!-- Skill Cards -->
-        <div class="row ml-auto">
-          <div class="col-md-4 col-12 pb-5">
-            <div class="card m-auto" style="width: 18rem;">
-              <img class="card-img-top" src="images/frontend.PNG" alt="Frontend Developer">
-              <div class="card-body">
-                <p class="card-text">Frontend Development</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 pb-5">
-            <div class="card m-auto" style="width: 18rem;">
-              <img class="card-img-top" style="height: 10em;" src="images/C.PNG" alt="C Programmer">
-              <div class="card-body">
-                <p class="card-text">C Programming</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card m-auto" style="width: 18rem;">
-              <img class="card-img-top" style="height: 10em;" src="images/java.PNG" alt="Java Programmer">
-              <div class="card-body">
-                <p class="card-text">Java Programming</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row ml-auto">
-          <div class="col-md-4 pt-5">
-              <div class="card m-auto" style="width: 18rem;">
-                <img class="card-img-top" style="height: 10em;" src="images/sql.PNG" alt="SQL">
-                <div class="card-body">
-                  <p class="card-text">SQL</p>
+                <div class="content">
+                    <div class="textBox">
+                        <p>Hello! My name is Alen. I am a Computer Science undergraduate.
+                            I started learning web development during 2020 and learned HTML,CSS and
+                            JavaScript. Now I am on a journey to learn ReactJS and NodeJS. Along with
+                            this I also practice competitive coding. I love designing posters,
+                            developing websites, nature photography, cycling, reading etc.
+                            <br><br>
+                            I'm open to Job opportunities where I can contribute, learn and grow.
+                            If you have a good opportunity that matches my skills and experience then
+                            don't hesitate to contact me.
+                            Here are a few technologies I've been working with recently : Flutter,
+                            Firebase, React .
+                        </p>
+                    </div>
+                    <div class="imgBx">
+                        <img src="images/bg.png" alt="">
+                    </div>
                 </div>
-              </div>
-            </div>
+            </section>
 
-          <div class="col-md-4 pt-5">
-            <a href="https://github.com/alenscaria" target="_blank" style="text-decoration: none;">
-                <div class="card m-auto" style="width: 18rem;">
-                  <img class="card-img-top" style="height: 10em;" src="images/github.PNG" alt="GitHub">
-                  <div class="card-body">
-                    <p class="card-text">GitHub</p>
+            <!--Skills-->
+            <section class="skills adjust" id="skills">
+                <div class="title">
+                    <h2>Skills</h2>
+                    <p></p>
                 </div>
-              </div>
-            </a>
-          </div>
+                <div class="content">
+                    <div class="skillBox">
+                        <img src="images/icon1.png" alt="">
+                        <h2>Web Design</h2>
+                        <p>Figma | Canva</p>
+                    </div>
 
-          <div class="col-md-4 pt-5">
-            <div class="card m-auto" style="width: 18rem;">
-              <img class="card-img-top" src="images/backend.PNG" alt="Backend Developer">
-              <div class="card-body">
-                <p class="card-text">Backend Development*</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
+                    <div class="skillBox">
+                        <img src="images/icon2.png" alt="">
+                        <h2>Web Development</h2>
+                        <p>HTML | CSS | JavaScript <br>NodeJS | ReactJS</p>
+                    </div>
 
-    <!-- Project Section -->
-    <section class="bg-light pb-5 pt-4" id="Projects">
-      <div class="container">
-        <h1 class="text-center">Projects</h1>
-        <div class="row ml-auto p-4">
+                    <div class="skillBox">
+                        <img src="images/icon5.png" alt="">
+                        <h2>Programming Languages</h2>
+                        <p>C | Java | Python | JavaScript</p>
+                    </div>
 
-          <div class="col-md-4 col-12 pt-4">
-            <div class="card m-auto" style="width: 18rem;">
-              <img class="card-img-top" src="images/train.PNG" alt="Train" style="height: 13em;width: auto;">
-              <div class="card-body">
-                <p class="card-text">Railway Ticket Reservation Project in C Programming language</p>
-              </div>
-            </div>
-          </div>
+                    <div class="skillBox">
+                        <img src="images/icon3.png" alt="">
+                        <h2>Tools & Platforms</h2>
+                        <p>Flutter | Firebase | Git | SQL | Linux</p>
+                    </div>
 
-          <div class="col-md-4 col-12 pt-4">
-            <div class="card m-auto" style="width: 18rem;">
-              <img class="card-img-top" src="images/calculator.PNG" alt="Calculator" style="height: 13em;width: auto;">
-              <div class="card-body">
-                <p class="card-text">Simple Calculator Using JFrame/Swing In Java</p>
-              </div>
-            </div>
-          </div>
+                    <div class="skillBox">
+                        <img src="images/icon6.png" alt="">
+                        <h2>Soft Skills</h2>
+                        <p>Creative | Collaborative | Curious</p>
+                    </div>
 
-          <div class="col-md-4 col-12 pt-4">
-            <a href="https://github.com/alenscaria/Simple-Calculator" target="blank_" style="text-decoration: none;"> 
-              <div class="card m-auto" style="width: 18rem;">
-                <img class="card-img-top" src="images/web calculator.PNG" alt="Calculator" style="height: 13em;">
-                <div class="card-body">
-                  <p class="card-text">Calculator using HTML, CSS and JavaScript</p>
+                    <div class="skillBox">
+                        <img src="images/icon4.png" alt="">
+                        <h2>Photography</h2>
+                        <p></p>
+                    </div>
                 </div>
-              </div>
-            </a> 
-          </div>
-        
-        </div>
+            </section>
 
-        <div class="row">
-          <div class="col-md-12 pt-4">
-            <h4 class="text-center">Working on new Cool Projects...</h4>
-          </div>
-        </div>
+            <!--Projects-->
+            <section class="project adjust" id="project">
+                <div class="title">
+                    <h2>Recent Work</h2>
+                    <p>Here are a few past projects I've worked on.</p>
+                </div>
+                <div class="content">
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="images/livez.png" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3>Admin Dashboard<br>Using React<br><br>Disaster Management</h3>
+                        </div>
+                    </div>
 
-      </div>
-    </section>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="images/etick.png" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3>E-Tick - Flutter App<br><br>Bus Ticket Automation & <br> Destination Alert App</h3>
+                        </div>
+                    </div>
 
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="images/caresio.jfif" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3>Caresio ChatBot<br>Using Dialogflow<br><br>Mental Health Chatbot</h3>
+                        </div>
+                    </div>
 
-    <!--Contact Section-->
-    <section class="container p-5" id="Contact">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-center">Contact me</h2> <br><br>
-          <form>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label>Name</label>
-                <input type="text" class="form-control" id="" placeholder="Name">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-              </div>
+                    <div class="workBx">
+                        <a href="https://simple-math-calculator.web.app/" target="_blank">
+                            <div class="imgBx">
+                                <img src="images/web calculator.PNG" alt="">
+                            </div>
+                            <div class="textBx">
+                                <h3>Simple Calculator<br>using html,css & JavaScript</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="images/css1.png" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3>CSS ART</h3>
+                        </div>
+                    </div>
+
+                    <div class="workBx">
+                        <a href="https://cafe-menu-design.web.app/">
+                            <div class="imgBx">
+                                <img src="images/cafemenu.png" alt="">
+                            </div>
+                            <div class="textBx">
+                                <h3>cafe menu<br>static website</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="images/img4.png" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3>Project 07</h3>
+                        </div>
+                    </div>
+
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="images/img4.png" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3>Project 08</h3>
+                        </div>
+                    </div>
+
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="images/img4.png" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3>Project 09</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Testimonials
+            <section class="testimonials adjust" id="testimonials">
+                <div class="title">
+                    <h2>Testimonials</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </div>
+                <div class="content">
+                    <div class="testimonialsBox">
+                        <div class="imgBx">
+                            <img src="images/user1.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit
+                            amet,
+                            consectetur adipiscing elit, sed do eiusmod</p>
+                        <h4>Richard Paul<br><span>Web Designer</span></h4>
+                    </div>
+
+                    <div class="testimonialsBox">
+                        <div class="imgBx">
+                            <img src="images/user2.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit
+                            amet,
+                            consectetur adipiscing elit, sed do eiusmod</p>
+                        <h4>Richard Paul<br><span>Web Designer</span></h4>
+                    </div>
+
+                    <div class="testimonialsBox">
+                        <div class="imgBx">
+                            <img src="images/user3.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit
+                            amet,
+                            consectetur adipiscing elit, sed do eiusmod</p>
+                        <h4>Richard Paul<br><span>Web Designer</span></h4>
+                    </div>
+
+                    <div class="testimonialsBox">
+                        <div class="imgBx">
+                            <img src="images/user1.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit
+                            amet,
+                            consectetur adipiscing elit, sed do eiusmod</p>
+                        <h4>Richard Paul<br><span>Web Designer</span></h4>
+                    </div>
+                </div>
+            </section>
+            -->
+
+            <!--Contacts-->
+            <section class="contact adjust" id="contact">
+                <div class="title">
+                    <h2>Let's Say Hi</h2>
+                    <p>Got a question or proposal, or just want
+                        to say hello? Go ahead.</p>
+                </div>
+                <div class="contactForm">
+                    <div class="row">
+                        <input type="text" name="" placeholder="First Name">
+                        <input type="text" name="" placeholder="Last Name">
+                    </div>
+                    <div class="row">
+                        <input type="text" name="" placeholder="Email Address">
+                        <input type="text" name="" placeholder="Mobile No.">
+                    </div>
+                    <div class="row2">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="row2">
+                        <a href="mailto:alenantony051@gmail.com" target="_blank"><input type="submit" value="Send"></a>
+                    </div>
+                </div>
+            </section>
+
+            <!--Copyright text-->
+            <div class="copyright">
+                <p>Copyright © 2022 Alen Scaria Antony. All Right Reserved.</p>
             </div>
-            <div class="form-group">
-              <label for="inputAddress">Message</label>
-              <textarea cols="30" rows="10" class="form-control" placeholder="Type your message here..."></textarea>
-            </div>
-          </div>
-           
-            <button style="width: 100%;" type="submit" class="btn btn-primary">Send</button>
-          </form>
         </div>
-      </div>
-    </section>
+    </div>
 
 
-    <!--Footer-->
-    <footer class="bg-info pb-5 pt-4">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-12">
-            <a href="mailto:alenantony051@gmail.com" class="fa fa-google"></a>
-            <a href="https://www.linkedin.com/in/alen-scaria-a-373559164/" target="blank_" class="fa fa-linkedin"></a>
-            <a href="https://www.instagram.com/alenscaria_photography/" target="blank_" class="fa fa-instagram"></a>
-            <a href="https://github.com/alenscaria" class="fa fa-github"></a>
-          </div>
-        </div>
-        <div class="row text-center pt-4">
-          <div class="col-md-12">
-            <p class="text-white">© 2021 Alen Scaria Antony. All Rights Reserved.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let topbar = document.querySelector('.topbar');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+        let themeSwitch = document.querySelector('.themeSwitch');
+        let body = document.querySelector('body');
+        toggle.onclick = function () {
+            toggle.classList.toggle('active');
+            topbar.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+        //theme switch toggle
+        themeSwitch.onclick = function () {
+            body.classList.toggle('dark');
+        }
+
+        function toggleMenu() {
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            navigation.classList.remove('active');
+            main.classList.remove('active');
+        }
+    </script>
 </body>
 </html>
