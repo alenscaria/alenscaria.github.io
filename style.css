@@ -599,7 +599,7 @@ p {
     }
 
     .main {
-        width: 100%;
+        width: 100%; 
         left: 0;
     }
 
@@ -656,6 +656,36 @@ p {
 }
 
 @media (max-width:767px) {
+
+    .navigation {
+        left: -100%;
+    }
+
+    .navigation.active {
+        left: 0;
+        width: 100%;
+    }
+
+    .main {
+        width: 100%; 
+        left: 0;
+    }
+
+    .main.active {
+        left: -100%;
+    }
+
+    .main .topbar {
+        width: 100%;
+        left: 0;
+        padding: 0 20px;
+    }
+
+    .navigation ul {
+        padding: 20px 20px;
+    }
+
+
     .skills .content {
         grid-template-columns: repeat(1, 1fr);
     }
