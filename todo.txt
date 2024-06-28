@@ -1,0 +1,5 @@
+- update CV
+- Add Background
+- Make the Contact part functional
+- Add the recomendations received
+- update the tech stack & certifications got
