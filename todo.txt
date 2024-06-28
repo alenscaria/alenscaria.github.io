@@ -1,4 +1,5 @@
 - update CV
+- remove bg of profile picture
 - Add Background
 - Make the Contact part functional
 - Add the recomendations received
