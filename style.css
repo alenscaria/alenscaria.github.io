@@ -314,7 +314,7 @@ p {
 
 .skills .content .skillBox {
     border: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 10%;
+    border-radius: 3%;
     padding: 50px 20px;
     display: flex;
     background: var(--white2);
@@ -366,7 +366,7 @@ p {
     width: 100%;
     height: 300px;
     overflow: hidden;
-    border-radius: 10%;
+    border-radius: 3%;
 }
 
 .project .content .workBx .imgBx {
@@ -416,6 +416,7 @@ p {
     color: #fff;
     font-size: 1em;
 }
+
 
 /*
 .testimonials .content {
