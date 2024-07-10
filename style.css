@@ -226,6 +226,7 @@ p {
 
 .socialMedia li {
     list-style: none;
+    transition-duration: .3s;
 }
 
 .socialMedia li a {
@@ -242,12 +243,20 @@ p {
     font-size: 1.2em;
 }
 
-.dark .socialMedia li a:hover {
-    background: #2196f3;
+#linkedin a:hover {
+    background: #0072b1;
+    color: #fff;
 }
-
-.socialMedia li a:hover {
-    background: var(--black2);
+#github a:hover {
+    background: #000;
+    color: #fff;
+}
+#gmail a:hover {
+    background: #ff4343;
+    color: #fff;
+}
+#instagram a:hover {
+    background: #d62976;
     color: #fff;
 }
 
